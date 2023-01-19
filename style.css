@@ -104,6 +104,7 @@ img.scrolldown {
 
 footer {
     background-color: blueviolet;
+    color: bisque;
     overflow: hidden;
     position: fixed;
     bottom: 0;
