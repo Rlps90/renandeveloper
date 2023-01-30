@@ -2,6 +2,7 @@
 
 :root {
   --transition: all 0.3s linear;
+  --spacing: 0.25rem;
 }
 
 html {
@@ -141,9 +142,9 @@ nav {
   transition: var(--transition);
 }
 
-.scroll-link {
+.links a {
   display: flex;
-  color: beige;
+  color: black;
   font-size: 1.1rem;
   letter-spacing: 0.25rem;
   font-weight: bold;
@@ -162,7 +163,7 @@ nav {
   }
 
   .nav-center {
-    width: 90vw;
+    width: 90vh;
     max-width: 1170px;
     margin: 0 auto;
     align-items: center;
@@ -185,17 +186,16 @@ nav {
     display: flex;
   }
 
-  .scroll-link {
+  .links a {
     background: transparent;
     color: black;
     font-size: 1.1rem;
-    letter-spacing: 0.25rem;
-    display: flex;
+    letter-spacing: var(--spacing);
     transition: var(--transition);
     margin: 0 1rem;
     font-weight: bold;
     padding: 0;
-    white-space: nowrap !important;
+    display: block;
   }
 
   .links a:hover {
@@ -217,24 +217,22 @@ nav {
 
 /* Ferramentas */
 
-a {
+.linguagens,
+.redes {
   color: inherit;
   font-size: 50px;
   padding: 50px;
+}
+
+.linguagens i,
+.redes i {
+  letter-spacing: 1.5rem;
 }
 
 /* fim */
 .topNav {
   background-color: aquamarine;
   overflow: hidden;
-}
-
-img.arrowDown {
-  width: 120px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 8%;
 }
 
 /* footer fixo na tela sempre */
