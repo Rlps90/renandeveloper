@@ -1,73 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <title>Renan Carvalho</title>
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <div class="topNav">
-            <a class="active" href="#links-redes">Redes Sociais</a>
-            <a class="active" href="#toolkits">Ferramentas</a>
-            <a class="active" href="#apresentacao">Sobre</a>
-            <a class="active" href="#home">Home</a>
+  <body>
+    <!-- header -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <img src="./arquivos/RLPS90-1.png" alt="logo" class="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
         </div>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#about" class="scroll-link">SOBRE</a>
+            </li>
+            <li>
+              <a href="#tools" class="scroll-link">FERRAMENTAS</a>
+            </li>
+            <li>
+              <a href="#social" class="scroll-link">REDES SOCIAIS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <div id="container">
-        <h1>Renan Carvalho</h1>
-        <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
-        <p id="apresentacao">
-            Iniciando no desenvolvimento Front-End. Estudando HTML, CSS e Javascript. Criei este website para
-            demonstrar o que aprendi e estou aprendendo.
-            <img id="avatar" src="./arquivos/avatarTest.png" alt="avatar">
-        </p>
-        
-    </div>
+    <!-- Seções do Portfólio -->
+    <!-- sobre -->
+    <section id="about" class="secao">
+      <h1>Renan Carvalho</h1>
+      <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
 
-    <a href="#toolkits">
-        <img class="scrolldown" src="./arquivos/icones/arrowDown.gif">
-    </a>
+      <p class="descricao">
+        Iniciando no desenvolvimento Front-End. Estudando HTML, CSS e
+        Javascript. Criei este website para demonstrar o que aprendi e estou
+        aprendendo.
+      </p>
+    </section>
 
-    <div id="toolkits">
-        <h2>Minhas ferramentas</h2>
-        <table class="skills">
-            <tr>
-                <th><i class="fa-brands fa-html5"></i></th>
-                <th><i class="fa-brands fa-css3-alt"></i></th>
-                <th><i class="fa-brands fa-square-js"></i></th>
-            </tr>
-            <tr>
-                <td>HTML5</td>
-                <td>CSS3</td>
-                <td>Javascript</td>
-            </tr>
-        </table>
-    </div>
+    <!-- ferramentas -->
+    <section id="tools" class="secao">
+      <h1>Ferramentas</h1>
+      <a
+        class="fa-brands fa-html5"
+        href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        target="_blank"
+      >
+        HTML5
+      </a>
 
-    <div class="links-redes">
-        <p>Redes</p>
-        <br>
-        <ul>
-            <a class="fa-brands fa-github" style="font-size:36px; color: black;" href="https://github.com/rlps90"
-                target="_blank">
-            </a>
-            <a class="fa-brands fa-linkedin" style="font-size:36px; color: blue;"
-                href="https://www.linkedin.com/in/rlps90/" target="_blank">
-            </a>
-        </ul>
-    </div>
+      <a
+        class="fa-brands fa-css3-alt"
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        target="_blank"
+      >
+        CSS3
+      </a>
 
-    <footer>@rlps90 2023</footer>
+      <a
+        class="fa-brands fa-square-js"
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+      >
+        Javascript
+      </a>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section id="social" class="secao">
+      <h1>Redes</h1>
+      <a
+        class="fa-brands fa-github"
+        href="https://github.com/rlps90"
+        target="_blank"
+      >
+        /Rlps90
+      </a>
+
+      <a
+        class="fa-brands fa-linkedin"
+        href="https://www.linkedin.com/in/rlps90/"
+        target="_blank"
+      >
+        /rlps90
+      </a>
+    </section>
+
+    <!-- contato -->
+    <section id="contact" class="secao">
+      <div class="titulo">
+        <h1>Me envie uma mensagem!</h1>
+      </div>
+      <p class="descricao">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
+        fugit suscipit nobis quas enim quis repellendus placeat voluptatibus
+        ipsa incidunt animi veniam, iure eos eius doloremque blanditiis? Enim,
+        excepturi?
+      </p>
+    </section>
+
+    <footer>@rlps90 <span class="date"></span> &copy;</footer>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

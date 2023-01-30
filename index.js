@@ -1,16 +1,19 @@
-// Smooth scrolling
-$(document).ready(function() {
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault()
+// Atualiza a data do site automaticamente
+const date = document.querySelector(".date");
+date.innerHTML = new Date().getFullYear();
 
-            var hash = this.hash
+// Toggle menu sanduiche
+const navToggle = document.querySelector(".nav-toggle");
+const linksContainer = document.querySelector(".links-container");
+const links = document.querySelector(".links");
 
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 400, function() {
-                window.location.hash = hash
-            })
-        }
-    })
-})
+navToggle.addEventListener("click", () => {
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  const linksHeight = links.getBoundingClientRect().height;
+
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px`;
+  } else {
+    linksContainer.style.height = 0;
+  }
+});
