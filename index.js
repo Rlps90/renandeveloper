@@ -2,7 +2,7 @@
 const date = document.querySelector(".date");
 date.innerHTML = new Date().getFullYear();
 
-// Toggle menu sanduiche
+// Toggle menu sanduiche de acordo com a quantidade e abas
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");

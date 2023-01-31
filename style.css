@@ -78,6 +78,17 @@ img {
   display: block;
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
 /* Corpo do site para tela > 800px */
 @media screen and (min-width: 900px) {
   body {
@@ -108,6 +119,34 @@ img {
   }
 }
 
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-white);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: var(--transition);
+}
+
+/* video background */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* logo navbar */
 .logo {
   height: 100px;
   border-radius: 50px;
@@ -158,11 +197,12 @@ nav {
   color: cornflowerblue;
 }
 
-/* Barra de navegacao (> 800px) */
+/* Barra de navegacao (> 900px) */
 @media screen and (min-width: 900px) {
   nav {
     background: transparent;
     display: flex;
+    z-index: 1;
   }
 
   .nav-center {
@@ -191,7 +231,7 @@ nav {
 
   .links a {
     background: transparent;
-    color: black;
+    color: bisque;
     font-size: 1.1rem;
     letter-spacing: var(--spacing);
     transition: var(--transition);
@@ -204,6 +244,11 @@ nav {
   .links a:hover {
     color: aqua;
   }
+}
+
+#about {
+  box-sizing: border-box;
+  color: bisque;
 }
 
 .descricao {
@@ -238,18 +283,20 @@ nav {
 /* fim */
 
 /* footer fixo na tela sempre */
-footer {
-  background-color: lightseagreen;
-  background-image: linear-gradient(
-    to top,
-    rgb(242, 224, 231),
-    rgb(168, 224, 213)
-  );
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  margin: auto;
-  text-align: center;
-  font-weight: bold;
+@media screen and (min-width: 900px) {
+  footer {
+    background-color: lightseagreen;
+    background-image: linear-gradient(
+      to top,
+      rgb(242, 224, 231),
+      rgb(168, 224, 213)
+    );
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+  }
 }

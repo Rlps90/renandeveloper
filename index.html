@@ -9,17 +9,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
     <title>Renan Carvalho</title>
   </head>
 
   <body>
+    <!-- Preloader
+    <div class="preloader">
+      <img src="" alt="" />
+    </div> -->
     <!-- header -->
     <header id="home">
+      <!-- video background -->
+      <video class="video-container" muted autoplay loop>
+        <source src="./arquivos/video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- switch play/pause
+      <button class="switch-btn">
+        <span> Play </span>
+        <span> Pause </span>
+        <span class="switch"> </span>
+      </button> -->
+
       <!-- navbar -->
       <nav id="nav">
         <div class="nav-center">
@@ -30,6 +41,7 @@
             </button>
           </div>
         </div>
+
         <!-- links -->
         <div class="links-container">
           <ul class="links">
@@ -51,13 +63,16 @@
     <!-- sobre -->
     <section id="about" class="secao">
       <h1>Renan Carvalho</h1>
-      <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+      <h2 style="padding: 5%">
+        Estudante de Análise e Desenvolvimento de Sistemas
+      </h2>
 
       <p class="descricao">
         Iniciando no desenvolvimento Front-End. Estudando HTML, CSS e
         Javascript. Criei este website para demonstrar o que aprendi e estou
         aprendendo.
       </p>
+      <img src="./arquivos/avatar.png" alt="avatar" class="avatar" />
     </section>
 
     <!-- ferramentas -->
