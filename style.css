@@ -117,6 +117,10 @@ header::after {
   h4 {
     font-size: 1rem;
   }
+
+  p {
+    line-height: 1;
+  }
 }
 
 /* preloader */
@@ -263,6 +267,12 @@ nav {
   padding-bottom: 100vh;
 }
 
+.msgUsuario {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
 /* Ferramentas */
 
 .linguagens,
@@ -299,4 +309,44 @@ nav {
     text-align: center;
     font-weight: bold;
   }
+}
+
+#avisoMsg {
+  background-color: red;
+  color: wheat;
+  border-radius: 2px;
+}
+
+[data-open-modal] {
+  margin: auto;
+  margin-bottom: 40vh;
+  width: 30%;
+  padding: 20px;
+  font-size: 200%;
+  background: none;
+  border: none;
+}
+
+[data-modal] {
+  margin: auto;
+  border: 2px;
+  border-radius: 0.25rem;
+  background: none;
+}
+
+#bothBtns {
+  margin-bottom: 20px;
+}
+
+textarea {
+  font-size: 1.25rem;
+}
+
+.btns {
+  background-color: rgb(45, 72, 148);
+  color: antiquewhite;
+  border-radius: 0.25rem;
+  border: none;
+  padding: 10px 10px;
+  box-shadow: 3px 3px rgb(45, 72, 148, 0.5);
 }

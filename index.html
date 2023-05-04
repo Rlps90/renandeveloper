@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <title>Renan Carvalho</title>
   </head>
 
@@ -23,13 +22,6 @@
       <video class="video-container" muted autoplay loop>
         <source src="./arquivos/video.mp4" type="video/mp4" />
       </video>
-
-      <!-- switch play/pause
-      <button class="switch-btn">
-        <span> Play </span>
-        <span> Pause </span>
-        <span class="switch"> </span>
-      </button> -->
 
       <!-- navbar -->
       <nav id="nav">
@@ -72,7 +64,6 @@
         Javascript. Criei este website para demonstrar o que aprendi e estou
         aprendendo.
       </p>
-      <img src="./arquivos/avatar.png" alt="avatar" class="avatar" />
     </section>
 
     <!-- ferramentas -->
@@ -81,24 +72,21 @@
       <a
         class="linguagens"
         href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-        target="_blank"
-      >
+        target="_blank">
         <i class="fa-brands fa-html5"> HTML5</i>
       </a>
 
       <a
         class="linguagens"
         href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-        target="_blank"
-      >
+        target="_blank">
         <i class="fa-brands fa-css3-alt"> CSS3</i>
       </a>
 
       <a
         class="linguagens"
         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        target="_blank"
-      >
+        target="_blank">
         <i class="fa-brands fa-square-js"> JavaScript</i>
       </a>
     </section>
@@ -113,24 +101,41 @@
       <a
         class="redes"
         href="https://www.linkedin.com/in/rlps90/"
-        target="_blank"
-      >
+        target="_blank">
         <i class="fa-brands fa-linkedin"> /rlps90</i>
       </a>
     </section>
 
     <!-- contato -->
-    <section id="contact" class="secao">
-      <div class="titulo">
-        <h1>Me envie uma mensagem!</h1>
-      </div>
-      <p class="descricao">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
-        fugit suscipit nobis quas enim quis repellendus placeat voluptatibus
-        ipsa incidunt animi veniam, iure eos eius doloremque blanditiis? Enim,
-        excepturi?
-      </p>
-    </section>
+    <div class="msgContainer">
+      <button data-open-modal>
+        <img
+          src="./arquivos/msgMe.png"
+          alt=""
+          style="width: 30%; margin: auto" />Me envie uma mensagem!
+      </button>
+      <dialog data-modal>
+        <form>
+          <div id="avisoMsg"></div>
+          <textarea
+            name=""
+            id="userInput"
+            cols="90"
+            rows="20"
+            style="resize: none"></textarea>
+          <div id="bothBtns">
+            <button
+              class="btns"
+              id="closeBtn"
+              type="submit"
+              formmethod="dialog">
+              Fechar
+            </button>
+            <button class="btns" id="sendBtn" type="submit">Enviar</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
 
     <footer>@rlps90 <span class="date"></span> &copy;</footer>
     <script src="index.js"></script>
